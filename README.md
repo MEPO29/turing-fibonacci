@@ -27,6 +27,9 @@ Asimismo se debe de tener un archivo de texto con las cadenas de entrada que se 
 ```txt
 1
 111
+![3](https://github.com/MEPO29/turing-fibonacci/assets/83565262/ca523181-fb69-4e49-9a8d-5efbbd546b5e)
+
+
 1111111
 ```
 
