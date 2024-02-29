@@ -10,7 +10,7 @@ Para este proyecto se tuvo que diseñar una implementación de una máquina de T
 Input: 1111 – Calcular el 4to término de la secuencia.
 Output: 111 – 3 es el 4to término de la secuencia.
 
-* Se trabajó con la menor cantidad de reglas posibles, pues es el aumento del uso de la cantidad de estas, provocaría que los tiempos de ejecución y bajaría la eficiencia del programa.
+* Se trabajó con la menor cantidad de reglas posibles, pues el aumento de estor no afectaría en mucho en cuanto el programa, ya que al ser una función exponencial, a partir de cierto punto sin importar la cantidad de reglas el programa sería muy poco eficiente y no podría calcular el n-ésimo número de la sucesión.
 
 
 ## Ejecución
@@ -28,3 +28,7 @@ El programa mostrará la simulación de la máquina de Turing para cada cadena d
 
 ## 2. Diagrama de la maquina de Turing
 ![3](https://github.com/MEPO29/turing-fibonacci/assets/83565262/ca523181-fb69-4e49-9a8d-5efbbd546b5e)
+
+## 3. Análisis Empírico 
+La lista de entradas se puede visualizar desde el .
+La función $0.00007*e^{(0.8584x)}$ puede ser descrita por Ω(g(n)), pues debido a que esta es de orden exponencial, siempre tiene una función multiplicada por una constante que será menor o igual a ella. En este caso, la función c(g(n)) puede visualizarse de forma mas eficiente a partir de $n_0$ = 10; el décimo término de la sucesión de Fibonacci. 
