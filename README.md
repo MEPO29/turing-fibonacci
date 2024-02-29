@@ -9,28 +9,16 @@ Para este proyecto se tuvo que diseñar una implementación de una máquina de T
 
 ## Ejecución
 Para ejecutar el programa se debe de ejecutar el archivo "main.py"
-Se requiere un archivo json de configuración para la máquina de Turing, el cual debe de tener la siguiente estructura:
-```json
-{
-    "Q": "States",
-    "Σ": "Alphabet",
-    "Γ": "Estados de la máquina de Turing",
-    "S": "Initial state",
-    "b": "Blank symbol",
-    "F": "Final states",
-    "transitions":{
-        "State": {"Symbol": ["Next state", "Symbol to write", "Direction"]},
-    }
-}
-```
+Se requiere un archivo json de configuración para la máquina de Turing.
+
 Asimismo se debe de tener un archivo de texto con las cadenas de entrada que se desean simular. Cada cadena debe de estar en una linea diferente. Ejemplo:
 ```txt
 1
+11
 111
-![3](https://github.com/MEPO29/turing-fibonacci/assets/83565262/ca523181-fb69-4e49-9a8d-5efbbd546b5e)
-
-
-1111111
 ```
 
-El programa mostrará la simulación de la máquina de Turing para cada cadena de entrada. Al finalizar el programa se generará un archivo de texto con el nombre "output.txt" en el cual se mostrará el resultado de cada cadena de entrada. 
+El programa mostrará la simulación de la máquina de Turing para cada cadena de entrada. Al finalizar el programa se generará un archivo de texto con el nombre "output.txt" en el cual se mostrará el resultado de cada cadena de entrada.
+
+## Diagrama de la maquina de Turing
+![3](https://github.com/MEPO29/turing-fibonacci/assets/83565262/ca523181-fb69-4e49-9a8d-5efbbd546b5e)
