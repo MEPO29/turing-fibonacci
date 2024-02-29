@@ -7,8 +7,8 @@ Para este proyecto se tuvo que diseñar una implementación de una máquina de T
 * La máquina de Turing es determinista. Esto quiere decir que se cuenta con una sola regla que la máquina puede seguir según la instrucción que se da.
 
 * El input y el output de la máquina están basados en un string de 1’s. La cantidad de 1s que se pone como input, será el n-ésimo término que se quiere calcular de la secuencia de Fibonacci. La cantidad de 1’s que devuelve como output, es el número que corresponde al n-ésimo término de la secuencia. e.g.
-- Input: 1111 – Calcular el 4to término de la secuencia.
-- Output: 111 – 3 es el 4to término de la secuencia.
+Input: 1111 – Calcular el 4to término de la secuencia.
+Output: 111 – 3 es el 4to término de la secuencia.
 
 * Se trabajó con la menor cantidad de reglas posibles, pues es el aumento del uso de la cantidad de estas, provocaría que los tiempos de ejecución y bajaría la eficiencia del programa.
 
