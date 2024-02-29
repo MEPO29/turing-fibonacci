@@ -2,10 +2,16 @@
 Para este proyecto se tuvo que diseñar una implementación de una máquina de Turing que con un archivo de configuración pueda leer una cadena y encontrar el número correspondiente F(n) donde n es el número que se desea calcular y F es la función de Fibonacci.
 
 ## Convenciones
-* La sucesión de Fibonacci empieza en 0.
-* La máquina de Turing admite una cadena de entrada compuesta de 1's. El numero de 1's en la cadena es el numero de la sucesión de Fibonacci que se desea encontrar. Ejemplo: 1111 es el numero 4 de la sucesión de Fibonacci.
-* La máquina de Turing regresa igualmente una cadena de 1's, o el numero 0 si la cadena de entrada es vacia.
-* Al momento de simular la máquina de Turing, el caracter "□" representa el espacio en blanco. Y el puntero de la máquina de Turing se representa por el caracter rodeado de corchetes "[ ]" y una flecha hacia abajo que simboliza la cabeza de la simulación.
+* El string vacío se tomará como el elemento 0 de la secuencia de Fibonacci. El primer elemento de la sucesión es 1, donde a partir de ese momento el n-ésimo elemento de la sucesión es la suma de los dos elementos anteriores. 
+
+* La máquina de Turing es determinista. Esto quiere decir que se cuenta con una sola regla que la máquina puede seguir según la instrucción que se da.
+
+* El input y el output de la máquina están basados en un string de 1’s. La cantidad de 1s que se pone como input, será el n-ésimo término que se quiere calcular de la secuencia de Fibonacci. La cantidad de 1’s que devuelve como output, es el número que corresponde al n-ésimo término de la secuencia. e.g.
+- Input: 1111 – Calcular el 4to término de la secuencia.
+- Output: 111 – 3 es el 4to término de la secuencia.
+
+* Se trabajó con la menor cantidad de reglas posibles, pues es el aumento del uso de la cantidad de estas, provocaría que los tiempos de ejecución y bajaría la eficiencia del programa.
+
 
 ## Ejecución
 Para ejecutar el programa se debe de ejecutar el archivo "main.py"
