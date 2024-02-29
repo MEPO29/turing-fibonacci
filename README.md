@@ -30,5 +30,6 @@ El programa mostrará la simulación de la máquina de Turing para cada cadena d
 ![3](https://github.com/MEPO29/turing-fibonacci/assets/83565262/ca523181-fb69-4e49-9a8d-5efbbd546b5e)
 
 ## 3. Análisis Empírico 
-La lista de entradas se puede visualizar desde el .
-La función $0.00007*e^{(0.8584x)}$ puede ser descrita por Ω(g(n)), pues debido a que esta es de orden exponencial, siempre tiene una función multiplicada por una constante que será menor o igual a ella. En este caso, la función c(g(n)) puede visualizarse de forma mas eficiente a partir de $n_0$ = 10; el décimo término de la sucesión de Fibonacci. 
+* La lista de entradas, así como el diagrama de dispersión, se pueden visualizar desde el archivo Listado de Prueba MAQUINAS DE TURING.xlsx. Además, nótese que los tiempos de ejecución que se tomaron en cuenta fueron cuando la máquina calculaba el n-ésimo término de la sucesión sin indicar todos los estados de la máquina. Sin embargo, realizando pruebas tomando en cuenta todos los estados e imprimiéndolos, los tiempos de ejecución fueron más largos, pero tienen el mismo comportamiento.
+
+* La función $0.00007*e^{(0.8584x)}$ puede ser descrita por Ω(g(n)), pues debido a que esta es de orden exponencial, siempre tiene una función multiplicada por una constante que será menor o igual a ella. En este caso, la función c(g(n)) puede visualizarse de forma mas eficiente a partir de $n_0$ = 10; el décimo término de la sucesión de Fibonacci. 
