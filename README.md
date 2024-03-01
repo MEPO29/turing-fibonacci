@@ -28,8 +28,9 @@ El programa mostrará la simulación de la máquina de Turing para cada cadena d
 
 ## 2. Diagrama de la maquina de Turing
 ![3](https://github.com/MEPO29/turing-fibonacci/assets/83565262/ca523181-fb69-4e49-9a8d-5efbbd546b5e)
-Código en python del diagrama de turing
-## Diagrama de la maquina de turing 
+### Código en python del diagrama:
+
+```python
 from graphviz import Digraph
 
 def create_graph(transitions):
@@ -66,6 +67,7 @@ graph = create_graph({
 })
 
 graph.render('G', view=True)
+```
 
 ## 3. Análisis Empírico 
 * La lista de entradas, así como el diagrama de dispersión, se pueden visualizar desde el archivo Listado de Prueba MAQUINAS DE TURING.xlsx. Además, nótese que los tiempos de ejecución que se tomaron en cuenta fueron cuando la máquina calculaba el n-ésimo término de la sucesión sin indicar todos los estados de la máquina. Sin embargo, realizando pruebas tomando en cuenta todos los estados e imprimiéndolos, los tiempos de ejecución fueron más largos, pero tienen el mismo comportamiento.
@@ -78,11 +80,11 @@ graph.render('G', view=True)
     
   Por inducción,
   
-  ** Paso base
+  * Paso base
   
   $$F(2) = F(2-1) + F(2-2) + 0 = F(1)+F(0) = 1 + 0 = 1$$
 
-  **  Paso inductivo
+  *  Paso inductivo
   
   Sea $F(n-1) = O(2^{n-1})$
   
@@ -96,8 +98,8 @@ graph.render('G', view=True)
   <img width="777" alt="image" src="https://github.com/MEPO29/turing-fibonacci/assets/87022337/ec4d55a0-2927-4fdb-9cdc-976a845fa8a8">
   
   ## 4. Bibliografía
-GeeksforGeeks (2023). Turing Machine in TOC. https://www.geeksforgeeks.org/turing-machine-in-toc/
+* GeeksforGeeks (2023). Turing Machine in TOC. https://www.geeksforgeeks.org/turing-machine-in-toc/
 
-Mark Jago. [Computerphile]. (29 de agosto de 2019). Turing Machines Explained - Computerphile [Video]. YouTube. https://www.youtube.com/watch?v=dNRDvLACg5Q
+* Mark Jago. [Computerphile]. (29 de agosto de 2019). Turing Machines Explained - Computerphile [Video]. YouTube. https://www.youtube.com/watch?v=dNRDvLACg5Q
 
-Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein. 2009. Introduction to Algorithms, Third Edition (3rd. ed.). The MIT Press.
+* Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein. 2009. Introduction to Algorithms, Third Edition (3rd. ed.). The MIT Press.
