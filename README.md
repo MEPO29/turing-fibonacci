@@ -91,7 +91,7 @@ graph.render('G', view=True)
 
   A pesar de la suposición inicial de F(n-1) = F(n-2), note que F(n-2) $<=$ F(n-1), por lo que es una cota superior, indicando que es una cota superior de la sucesión.
   
-  Note que $c*2^n >= 0.0007e^(0.8584*x)$
+  Note que $c2^n \geq 0.0007e^{0.8584x}$
   <img width="777" alt="image" src="https://github.com/MEPO29/turing-fibonacci/assets/87022337/ec4d55a0-2927-4fdb-9cdc-976a845fa8a8">
   
   ## 4. Bibliografía
