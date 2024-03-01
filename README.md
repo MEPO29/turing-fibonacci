@@ -94,3 +94,9 @@ graph.render('G', view=True)
   Note que $c*2^n >= 0.0007e^(0.8584*x)$
   <img width="777" alt="image" src="https://github.com/MEPO29/turing-fibonacci/assets/87022337/ec4d55a0-2927-4fdb-9cdc-976a845fa8a8">
   
+  ## 4. Bibliografía
+GeeksforGeeks (2023). Turing Machine in TOC. https://www.geeksforgeeks.org/turing-machine-in-toc/
+
+Mark Jago. [Computerphile]. (29 de agosto de 2019). Turing Machines Explained - Computerphile [Video]. YouTube. https://www.youtube.com/watch?v=dNRDvLACg5Q
+
+Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest, and Clifford Stein. 2009. Introduction to Algorithms, Third Edition (3rd. ed.). The MIT Press.
