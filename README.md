@@ -28,6 +28,44 @@ El programa mostrará la simulación de la máquina de Turing para cada cadena d
 
 ## 2. Diagrama de la maquina de Turing
 ![3](https://github.com/MEPO29/turing-fibonacci/assets/83565262/ca523181-fb69-4e49-9a8d-5efbbd546b5e)
+Código en python del diagrama de turing
+## Diagrama de la maquina de turing 
+from graphviz import Digraph
+
+def create_graph(transitions):
+    graph = Digraph('G')
+    graph.attr(rankdir='LR', size='8,5')
+
+    for state in transitions:
+        graph.node(state)
+
+    for state, transitions in transitions.items():
+        for symbol, (next_state, write, move) in transitions.items():
+            graph.edge(state, next_state, label=f'{symbol}, {write}, {move}')
+
+    return graph
+
+graph = create_graph({
+    "0": {"1": ["1","X",1], "X": ["18", "0", 1]},
+    "1": {"1": ["2","X",1], "X": ["18", "1", 1]},
+    "2": {"1": ["2","1",1], "X": ["3", "0", 1]},
+    "3": {"X": ["4", "A", 1]},
+    "4": {"X": ["5", "0", 1]},
+    "5": {"X": ["12", "A", -1]},
+    "7": {"1": ["7", "A", 1], "0": ["7", "0", 1], "A": ["7", "A", 1], "X": ["8", "0", -1]},
+    "8": {"1": ["8", "1", -1], "0": ["9", "0", -1], "A": ["10", "1", 1]},
+    "9": {"1": ["9", "1", -1], "0": ["12", "0", -1], "A": ["10", "1", 1]},
+    "10": {"1": ["10", "1", 1], "0": ["10", "0", 1], "X": ["11", "1", -1]},
+    "11": {"1": ["11", "1", -1], "0": ["8", "0", -1]},
+    "12": {"1": ["12", "1", -1], "0": ["12", "0", -1], "A": ["12", "A", -1], "X": ["13", "X", 1]},
+    "13": {"1": ["14", "X", 1], "0": ["15", "1", 1]},
+    "14": {"1": ["14", "1", 1], "0": ["7", "0", 1]},
+    "15": {"1": ["15", "A", 1], "0": ["15", "0", 1], "A": ["15", "A", 1], "X": ["16", "X", -1]},
+    "16": {"0": ["17", "X", -1], "A": ["16", "1", -1]},
+    "17": {"1": ["18", "X", 1], "0": ["17", "X", -1], "A": ["17", "X", -1]}
+})
+
+graph.render('G', view=True)
 
 ## 3. Análisis Empírico 
 * La lista de entradas, así como el diagrama de dispersión, se pueden visualizar desde el archivo Listado de Prueba MAQUINAS DE TURING.xlsx. Además, nótese que los tiempos de ejecución que se tomaron en cuenta fueron cuando la máquina calculaba el n-ésimo término de la sucesión sin indicar todos los estados de la máquina. Sin embargo, realizando pruebas tomando en cuenta todos los estados e imprimiéndolos, los tiempos de ejecución fueron más largos, pero tienen el mismo comportamiento.
