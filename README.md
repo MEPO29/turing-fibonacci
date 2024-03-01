@@ -70,7 +70,6 @@ graph.render('G', view=True)
 ## 3. Análisis Empírico 
 * La lista de entradas, así como el diagrama de dispersión, se pueden visualizar desde el archivo Listado de Prueba MAQUINAS DE TURING.xlsx. Además, nótese que los tiempos de ejecución que se tomaron en cuenta fueron cuando la máquina calculaba el n-ésimo término de la sucesión sin indicar todos los estados de la máquina. Sin embargo, realizando pruebas tomando en cuenta todos los estados e imprimiéndolos, los tiempos de ejecución fueron más largos, pero tienen el mismo comportamiento.
 
-* La función $0.00007*e^{(0.8584x)}$ puede ser descrita por Ω(g(n)), pues debido a que esta es de orden exponencial, siempre tiene una función multiplicada por una constante que será menor o igual a ella. En este caso, la función c(g(n)) puede visualizarse de forma mas eficiente a partir de $n_0$ = 10; el décimo término de la sucesión de Fibonacci. 
 
 * Sea F(n) = nuestra sucesión de Fibonacci. Notese que F(0)=0 y F(1)=1
   Entonces, F(n) = F(n-1) + F(n-2) + O(1) para todo n>1.
@@ -90,8 +89,10 @@ graph.render('G', view=True)
   Entonces, $F(n) = F(n-1) + F(n-2) + O(1) = O(2^{n-1}) + O(2^{n-2}) +O(1) = O(2^{n})$
 
   A pesar de la suposición inicial de F(n-1) = F(n-2), note que F(n-2) $<=$ F(n-1), por lo que es una cota superior, indicando que es una cota superior de la sucesión.
+
+  * La función $0.00007*e^{(0.8584n)}$ puede ser descrita por O(g(n)), pues debido a que esta es de orden exponencial, siempre tiene una función multiplicada por una constante que será mayor o igual a ella. En este caso, la función c(g(n)) = $c2^{n}$ puede visualizarse de forma mas eficiente a partir del primer término de la sucesión de Fibonacci.
   
-  Note que $c2^n \geq 0.0007e^{0.8584x}$
+  Note que $c2^n \geq 0.0007e^{0.8584n}$
   <img width="777" alt="image" src="https://github.com/MEPO29/turing-fibonacci/assets/87022337/ec4d55a0-2927-4fdb-9cdc-976a845fa8a8">
   
   ## 4. Bibliografía
